@@ -1,0 +1,118 @@
+@import "../colors";
+@import "../fonts";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/img/bananaSplit.jpg");
+    background-size: cover;
+    height: 130px;
+    .btnNav{
+        text-decoration: none;
+        padding: 10px;
+        margin: 20px;
+        li{
+            list-style: none;
+            text-transform: uppercase;
+            color: $text;
+            font-family: $font-principal;
+            &:hover{
+            color: $primary;
+            }
+        }
+
+    }
+    .btnIcon{
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        i{
+            list-style: none;
+            text-transform: uppercase;
+            color: $text;
+            &:hover{
+            color: $primary;
+            }
+        }
+    }
+    .imgLogo{
+        img{
+            padding: 10px;
+            margin: 10px;
+            width: 160px;
+            transition: transform 0.5s ease-in-out;
+            &:hover{
+            transform: scale(1.2);
+            }
+        }
+        
+    }
+}
+
+.sectionProducts{
+    height: 400px;
+    background-color: $imagenBrownie;
+    font-family: $font-principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .textProducts{
+        display: flex;
+        justify-content: center;
+        .textCenter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            h1{
+                font-size: 3.5em;
+                text-transform: uppercase;
+                margin: 0px
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+    }
+    .imageProducts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 400px;
+        }
+    }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    .spaceCategory{
+        display: flex;
+        justify-content: center;
+        .catProducts{
+            width: 400px;
+            height: 200px;
+            background: $secondary;
+            margin: 20px;
+            border: 2px solid $primary;
+        }
+    }
+    .spaceProducts{
+        display: flex;
+        justify-content: center;
+        .products{
+            width: 200px;
+            height: 200px;
+            background: $primary;
+            margin: 20px;
+            border: 2px solid $secondary;
+        }
+    }
+}
+
