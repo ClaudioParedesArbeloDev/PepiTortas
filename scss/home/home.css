@@ -108,4 +108,29 @@ body {
   background: #7fffd4;
   margin: 20px;
   border: 2px solid #f87aaa;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #f87aaa;
+  font-family: "Poppins", sans-serif;
+}
+footer .socialMedia {
+  display: flex;
+  margin: 20px;
+}
+footer .socialMedia a {
+  text-decoration: none;
+}
+footer .socialMedia a i {
+  color: black;
+  font-size: 1.7em;
+  padding: 10px;
+  transition: ease-in-out 0.5s;
+}
+footer .socialMedia a i:hover {
+  color: #f87aaa;
+  transform: scale(1.4);
 }/*# sourceMappingURL=home.css.map */

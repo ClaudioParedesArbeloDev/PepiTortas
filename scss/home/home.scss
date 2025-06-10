@@ -116,3 +116,27 @@ body{
     }
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid $secondary;
+    font-family: $font-principal;
+    .socialMedia{
+        display: flex;
+        margin: 20px;
+        a{
+            text-decoration: none;
+            i{
+                color: black;
+                font-size: 1.7em;
+                padding: 10px;
+                transition: ease-in-out 0.5s;
+            }
+            i:hover{
+                color: $secondary;
+                transform: scale(1.4);
+            }
+        }
+    }
+}
